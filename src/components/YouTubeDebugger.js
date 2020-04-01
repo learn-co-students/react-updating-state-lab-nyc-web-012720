@@ -27,23 +27,24 @@ class YouTubeDebugger extends Component {
       settings: {
         ...prevState.settings,
         bitrate: 12
-      }
-    }))
-  }
-
-  resolutionUpdater = () => {
-    this.setState((prevState) => ({
-      settings: {
-        ...prevState.settings,
-        video: {
-          ...prevState.settings.video, 
-          resolution: '720p'
         }
-      }
-    }))
-  }
-
-  render() {
+      })
+      )
+    }
+    
+    resolutionUpdater = () => {
+      this.setState((prevState) => ({
+        settings: {
+          ...prevState.settings,
+          video: {
+            ...prevState.settings.video, 
+            resolution: '720p'
+          }
+        }
+      }))
+    }
+    
+    render() {
 
     return (
       <div>
