@@ -18,7 +18,7 @@ class YouTubeDebugger extends Component {
             settings: {...this.state.settings, bitrate: 12} 
         }
 
-        this.setState(updateBitrate, () => {console.log(this.state)})
+        this.setState(updateBitrate)
     }
 
     handleLowerResolution = () => {     
@@ -26,7 +26,7 @@ class YouTubeDebugger extends Component {
             settings: {...this.state.settings, video: {...this.state.settings.video, resolution: '720p'}}
         }
 
-        this.setState(updateResolution, () => { console.log(this.state) }) 
+        this.setState(updateResolution) 
     }
 
     render() {
